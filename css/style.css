@@ -7,3 +7,7 @@
 .jumbotron {
 	background-color: orange;
 }
+
+.score {
+	padding: 1em;
+}
