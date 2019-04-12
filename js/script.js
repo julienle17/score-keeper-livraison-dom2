@@ -9,21 +9,19 @@ const buttonReset = document.getElementsByClassName('buttonreset');
 let scoreLimit = 5;
 
 function incrementScorePlayer1() {
-	if (scorePlayer1 < scoreLimit) {
 		scorePlayer1++;
-	} else {
-			freeze();
+	if (scorePlayer1 == scoreLimit) {
+			freezePlayerButton();
 			return;
-	}
+	} 
 }
 
 function incrementScorePlayer2() {
-	if (scorePlayer2 < scoreLimit) {
 		scorePlayer2++;
-	} else {
-			freeze();
+	if (scorePlayer2 < scoreLimit) {
+			freezePlayerButton();
 			return;
-	}
+	} 
 }
 
 function freezePlayerButton() {
