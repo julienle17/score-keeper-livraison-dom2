@@ -2,16 +2,31 @@
 
 let scorePlayer1 = document.getElementsByClassName('scoreplayer1')[0].innerHTML;
 let scorePlayer2 = document.getElementsByClassName('scoreplayer2')[0].innerHTML;
-const buttonPlayer1 = document.getElementsByClassName('buttonplayer1');
-const buttonPlayer2 = document.getElementsByClassName('buttonplayer2');
+const buttonPlayer1 = document.getElementsByClassName('buttonplayer1')[0];
+const buttonPlayer2 = document.getElementsByClassName('buttonplayer2')[0];
 const buttonReset = document.getElementsByClassName('buttonreset');
-let scoreLimitInput = document.getElementsByClassName('scorelimiteinput').value = (5);
+//let scoreLimitInput = document.getElementsByClassName('scorelimitinput').value = (5);
+let scoreLimit = 5;
 
 function incrementScorePlayer1() {
-	scorePlayer1++;
+	if (scorePlayer1 < scoreLimit) {
+		scorePlayer1++;
+	} else {
+			freeze();
+			return;
+	}
 }
 
 function incrementScorePlayer2() {
-	scorePlayer2++;
+	if (scorePlayer2 < scoreLimit) {
+		scorePlayer2++;
+	} else {
+			freeze();
+			return;
+	}
 }
 
+function freezePlayerButton() {
+	buttonPlayer1.disabled = true;
+	buttonPlayer2.disabled = true;
+}
