@@ -32,8 +32,8 @@ function freezePlayerButton() {
 }
 
 function resetScoreDisplay() {
-	scorePlayer1 = 0;
-	scorePlayer2 = 0;
+	document.getElementsByClassName('scoreplayer1')[0].innerHTML = 0;
+	document.getElementsByClassName('scoreplayer2')[0].innerHTML = 0;
 	buttonPlayer1.disabled = false;
 	buttonPlayer2.disabled = false;
 }
