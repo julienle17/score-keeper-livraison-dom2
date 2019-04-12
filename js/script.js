@@ -30,3 +30,8 @@ function freezePlayerButton() {
 	buttonPlayer1.disabled = true;
 	buttonPlayer2.disabled = true;
 }
+
+function resetScoreDisplay() {
+	scorePlayer1 = 0;
+	scorePlayer2 = 0;
+}
