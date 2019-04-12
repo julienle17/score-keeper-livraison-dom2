@@ -10,6 +10,7 @@ let scoreLimit = 5;
 
 function incrementScorePlayer1() {
 		scorePlayer1++;
+		document.getElementsByClassName('scoreplayer1')[0].innerHTML = scorePlayer1;
 	if (scorePlayer1 == scoreLimit) {
 			freezePlayerButton();
 			return;
@@ -18,7 +19,8 @@ function incrementScorePlayer1() {
 
 function incrementScorePlayer2() {
 		scorePlayer2++;
-	if (scorePlayer2 < scoreLimit) {
+		document.getElementsByClassName('scoreplayer2')[0].innerHTML = scorePlayer2;
+	if (scorePlayer2 == scoreLimit) {
 			freezePlayerButton();
 			return;
 	} 
