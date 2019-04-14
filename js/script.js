@@ -11,9 +11,9 @@ function incrementScorePlayer1() {
 		scorePlayer1++;
 		document.getElementsByClassName('scoreplayer1')[0].innerHTML = scorePlayer1;
 	if (scorePlayer1 == scoreLimit) {
-			scorePlayer1.className += 'player1winner';
-			scorePlayer2.className += 'player2looser';
 			freezePlayerButton();
+			document.getElementsByClassName('scoreplayer1')[0].classList.add('p1winner');
+			document.getElementsByClassName('scoreplayer2')[0].classList.add('p2looser');
 			return;
 	} 
 }
@@ -22,9 +22,9 @@ function incrementScorePlayer2() {
 		scorePlayer2++;
 		document.getElementsByClassName('scoreplayer2')[0].innerHTML = scorePlayer2;
 	if (scorePlayer2 == scoreLimit) {
-			scorePlayer2.className += 'player2winner';
-			scorePlayer1.className += 'player1looser';
 			freezePlayerButton();
+			document.getElementsByClassName('scoreplayer2')[0].classList.add('p2winner');
+			document.getElementsByClassName('scoreplayer1')[0].classList.add('p1looser');
 			return;
 	} 
 }
@@ -37,10 +37,10 @@ function freezePlayerButton() {
 function resetScoreDisplay() {
 	scorePlayer1 = 0;
 	document.getElementsByClassName('scoreplayer1')[0].innerHTML = 0;
-	scorePlayer1.className.remove('player1winner';'player1losser');
+	document.getElementsByClassName('scoreplayer1')[0].classList.remove('p1winner', 'p1looser');
 	scorePlayer2 = 0;
 	document.getElementsByClassName('scoreplayer2')[0].innerHTML = 0;
-	scorePlayer2.className.remove('player2winner';'player2losser');
+	document.getElementsByClassName('scoreplayer2')[0].classList.remove('p2winner', 'p2looser');
 	buttonPlayer1.disabled = false;
 	buttonPlayer2.disabled = false;
 }

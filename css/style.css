@@ -4,10 +4,26 @@
 	box-sizing: border-box;
 }
 
-.jumbotron {
-	background-color: orange;
-}
 
 .score {
 	padding: 1em;
+}
+
+.p1winner {
+	color: green;
+	background-color:lightgreen;
+}
+
+.p1looser {
+	color: red;
+	background-color: #BF0000;}
+
+.p2winner {
+	color: green;
+	background-color: lightgreen;
+}
+
+.p2looser {
+	color: red;
+	background-color: #BF0000;
 }
