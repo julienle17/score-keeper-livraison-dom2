@@ -9,18 +9,22 @@
 	justify-content: space-around;
 }
 
-.scoreplayer1 {
+.content-button {
+	display: flex;
+	justify-content: space-around;
+}
+
+.scoreplayer1, .scoreplayer2 {
 	width: 25%;
 	padding: 25vh;
 	text-align: center;
 	border: 0.1em solid black;
 }
 
-.scoreplayer2 {
-	width: 25%;
-	padding: 25vh;
-	text-align: center;
-	border: 0.1em solid black;
+
+.buttonplayer1, .buttonplayer2, .buttonreset, .scorelimitinput {
+	margin: 5em;
+	padding: 2em;
 }
 
 .score {
