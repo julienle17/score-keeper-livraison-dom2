@@ -4,6 +4,24 @@
 	box-sizing: border-box;
 }
 
+.content-paragraph {
+	display: flex;
+	justify-content: space-around;
+}
+
+.scoreplayer1 {
+	width: 25%;
+	padding: 25vh;
+	text-align: center;
+	border: 0.1em solid black;
+}
+
+.scoreplayer2 {
+	width: 25%;
+	padding: 25vh;
+	text-align: center;
+	border: 0.1em solid black;
+}
 
 .score {
 	padding: 1em;

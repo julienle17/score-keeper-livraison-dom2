@@ -3,18 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Score keeper</title>
-		<link rel="stylesheet" href="css/bootstrap.css" media="all">
 		<link rel="stylesheet" href="css/style.css" media="all">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<main class="container-fluid">
-			<p class="scoreplayer1  score d-inline">0</p>
-			<p class="scoreplayer2  score d-inline">0</p>
+		<main class="main">
+			<div class="content-paragraph">
+			<p class="scoreplayer1">0</p>
+			<p class="scoreplayer2">0</p>
+			</div>
 			<input type="number" class="scorelimitinput" value="5" placeholder="Insert a limit number">
-			<button type="button" class="btn btn-success btn-lg buttonplayer1" onclick="incrementScorePlayer1()">Player 1</button>
-			<button type="button" class="btn btn-success btn-lg buttonplayer2" onclick="incrementScorePlayer2()">Player 2</button>
-			<button type="button" class="btn btn-warning btn-lg buttonreset" onclick="resetScoreDisplay()">Reset</button>
+			<button type="button" class="buttonplayer1" onclick="incrementScorePlayer1()">Player 1</button>
+			<button type="button" class="buttonplayer2" onclick="incrementScorePlayer2()">Player 2</button>
+			<button type="button" class="buttonreset" onclick="resetScoreDisplay()">Reset</button>
 		</main>
 		<script src="js/script.js"></script>
 	</body>
